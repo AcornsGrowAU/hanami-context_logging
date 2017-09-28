@@ -1,3 +1,4 @@
+require 'time'
 require 'hanami/logger'
 require 'rack/request_auditing'
 
