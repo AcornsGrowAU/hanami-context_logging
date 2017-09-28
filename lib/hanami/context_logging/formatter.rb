@@ -1,10 +1,11 @@
+require 'time'
 require 'hanami/logger'
 require 'rack/request_auditing'
 
 module Hanami
   module ContextLogging
     class Formatter < Hanami::Logger::Formatter
-      TIMESTAMP_FORMAT = '%FT%T.%L%z'
+      TIMESTAMP_FORMAT = '%FT%T.%L%z'.freeze
 
       private
 
